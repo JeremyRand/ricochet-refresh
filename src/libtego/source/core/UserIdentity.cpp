@@ -113,7 +113,7 @@ void UserIdentity::setupService(const QString& serviceID)
 
     // If Ricochet is running on a different machine than Tor (i.e.
     // Workstation/Gateway setup), then listen on 0.0.0.0 as per this spec:
-    // http://www.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Dev/Whonix_friendly_applications_best_practices#Listen_Interface
+    // http://www.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Dev/Project_friendly_applications_best_practices#Listen_Interface
     if (QFile::exists("/usr/share/anon-ws-base-files/workstation")) {
         address = QHostAddress::AnyIPv4;
     }
